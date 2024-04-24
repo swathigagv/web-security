@@ -1,0 +1,122 @@
+* {
+	background-color: lightgoldenrodyellow;
+	box-sizing: border-box;
+
+}
+
+
+.col{
+    background-color: lavender;
+	float: left;
+	width:25.3%;
+	padding: 15px;
+	border-radius: 2px;
+	border-width: 2px;
+	border-style:hidden;
+	
+}
+.profile{
+	background-color: lavender;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+
+.profile img{
+
+       background-color: lavender;
+	   width: 60%;
+	   height: 111%;
+       
+}
+.profile p{
+	 background-color: lavender;
+	 padding-right: 5px;
+}
+.profile h4{
+	background-color: lavender;
+	padding-right: 3px;
+}
+
+.menu{
+    background-color: lavender;
+    float: left;
+    line-height: 35px;
+    justify-content: center;
+    align-items: center;
+    scroll-padding-block-end: auto;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.ul {
+	background-color: lavender;
+    list-style: none;
+    line-height: 25px;
+    margin-left: 62px;
+    margin-top: 2px;
+    font-size: 14px;
+    width: 20%; 
+    float: left; 
+  
+}
+ 
+.menu a{
+	background-color: lavender;
+}
+.menu p {
+	background-color: lavender;
+}
+.menu em{
+	background-color: lavender;
+}
+
+.column1{
+    float: left;
+	width: 33.3%;
+	
+}
+.column1 h4{
+
+	font-family: italic;
+	font-size: 18px;
+	padding-left: 55px;
+	font-weight:lighter;
+}
+.column1  h3{
+	
+	font-family: italic;
+	font-size: 35px;
+	position: relative;
+	padding-top: 150px;
+	padding-right: 12px;
+	padding-left: 55px;
+}
+.column1 p{
+
+	padding-left: 80px;
+}
+.btun {
+    padding:15px 30px 15px 30px;
+}
+.topright{
+	overflow: hidden;
+	width: 34.3%;
+}
+.topright img{
+	border-style:solid;
+    border: 15px ;
+    padding: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: lightgoldenrodyellow;
+    padding-bottom: 60px;
+    margin:84px;
+    transform: scaleY(3);
+    position: absolute;
+    width: 450px;
+    height: 276px;
+    object-fit: cover;
+    overflow: hidden;
+    padding-block-end:inherit;
+}
+
