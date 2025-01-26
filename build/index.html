@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type=text/css , href="styles.css">
+    <title>Portfolio Tracker</title>
+</head>
+<header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+      
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="Dashboard.html" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="profiletracker.html" class="nav-link px-2 link-body-emphasis">Portfolio</a></li>
+          <li><a href="Dashboard.html" class="nav-link px-2 link-body-emphasis">Profile</a></li>
+         <!--<li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>-->
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+<div class="dropdown text-end">
+         <a>Know More</a>
+         <!--<a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="avatar.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>-->
+          <ul class="dropdown-content" id="myDropdown">
+            <li><a class="dropdown-item" href="#">About us</a></li>
+            <li><a class="dropdown-item" href="#">Insight</a></li>
+            <li><a class="dropdown-item" href="#">Methodology</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">FAQ's</a></li>
+          </ul>
+        </div>
+<div class="button1" style="display: flex; position: relative;flex-direction: row;">
+  <a href="login.html">
+    <button class="btn" ,type="button">Login</button></a>
+   <a href="signup.html">
+    <button class="btn" ,type="button">signup</button></a>
+      </div>
+    </div>
+  </div>
+  </header>
+  <body>
+   <!--<div class="dashboard">
+      <header>
+          <h1>Stock Market Dashboard</h1>
+      </header>
+      <main>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Portfolio Tracker</title>
+    <script>
+        async function fetchPortfolio() {
+            const response = await fetch('portfolio.php');
+            const data = await response.json();
+
+            const portfolioDiv = document.getElementById('portfolio');
+            portfolioDiv.innerHTML = ''; // Clear previous content
+
+            let totalValue = `<h3>Total Portfolio Value: $${data.total_value.toFixed(2)}</h3>`;
+            let stocks = '<ul>';
+            data.portfolio.forEach(stock => {
+                stocks += `<li>${stock.symbol}: $${stock.price.toFixed(2)}</li>`;
+            });
+            stocks += '</ul>';
+
+            portfolioDiv.innerHTML = totalValue + stocks;
+        }
+    </script>
+</head>
+<body>
+    <h1>Portfolio Tracker</h1>
+    <button onclick="fetchPortfolio()">Get Portfolio</button>
+    <div id="portfolio"></div>
+         <!--<div class="watchlist">
+              <h2>Watchlist</h2>
+              <ul id="watchlist">-->
+                  <!-- Watchlist items will be dynamically added here -->
+              <!--</ul>
+          </div>
+          <div class="stock-details">
+              <h2>Stock Details</h2>
+              <div id="stock-info">-->
+                  <!-- Stock details will be displayed here -->
+              <!--</div>
+          </div>
+      </main>
+      <section class="search-section">
+          <input type="text" id="search" placeholder="Search for stocks...">
+          <table id="stock-table">
+              <thead>
+                  <tr>
+                      <th>Stock Name</th>
+                      <th>Price</th>
+                      <th>Change</th>
+                      <th>Actions</th>
+                  </tr>
+              </thead>
+              <tbody>-->
+                  <!-- Stock list will be dynamically added here -->
+              <!--</tbody>
+          </table>
+      </section>
+  </div>
+  <script src="script.js"></script>-->
+  <!--<script src="/portfolio-tracker/src/Dashboard.js"></script>-->
+</body>
+</html>
+ <!--<script src="build/static/js/main.js"></script>
+  </body>
+  </html>-->
+
+
+
